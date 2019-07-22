@@ -4,6 +4,6 @@ node {
 
     /* .. snip .. */
 
-    sh 'mvn test'
+    bat 'mvn test'
 
 }
