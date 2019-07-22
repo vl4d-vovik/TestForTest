@@ -4,8 +4,6 @@ node {
 
     /* .. snip .. */
 
-
-
-    sh "ls"
+    sh 'mvn test'
 
 }
