@@ -10,6 +10,7 @@ public class App
 {
     @Test
     public void test() {
+        System.out.println("test for test");
 
     }
 
