@@ -43,13 +43,13 @@ public class App
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\vvoitehovici\\IdeaProjects\\testdisportal\\drivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
-        driver.get("https://www.google.com/");
-//        driver.get("http://demo.guru99.com/test/guru99home/");
-        //       String title = driver.getTitle();
+ //       driver.get("https://www.google.com/");
+        driver.get("http://demo.guru99.com/test/guru99home/");
+               String title = driver.getTitle();
 
-//        System.out.println(title);
+        System.out.println(title);
 
-        //      Assert.assertFalse(title.contains("Demo Guru99 Page"));
+             Assert.assertTrue(title.contains("Demo Guru99 Page"));
 
 
     }
