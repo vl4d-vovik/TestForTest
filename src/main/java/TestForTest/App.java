@@ -39,11 +39,11 @@ public class App
     public void test() {
 
 
-        System.out.println("test for test!!!");
-//        System.setProperty("webdriver.chrome.driver", "C:\\Users\\vvoitehovici\\IdeaProjects\\testdisportal\\drivers\\chromedriver.exe");
-//        driver = new ChromeDriver();
+        //System.out.println("test for test!!!");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\vvoitehovici\\IdeaProjects\\testdisportal\\drivers\\chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
 
-//        driver.get("https://www.google.com/");
+        driver.get("https://www.google.com/");
 //        driver.get("http://demo.guru99.com/test/guru99home/");
         //       String title = driver.getTitle();
 
