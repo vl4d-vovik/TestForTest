@@ -24,7 +24,7 @@ public class App
 //        driver = new FirefoxDriver();
 //        driver = new ChromeDriЛver();
 
-//        driver = new RemoteWebDriver(new URL("http://localhost:4545"), new ChromeOptions());
+        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), new ChromeOptions());
 
     }
     @AfterEach
@@ -35,8 +35,8 @@ public class App
     @Test
     public void test() {
         System.out.println("test for test");
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\vvoitehovici\\IdeaProjects\\testdisportal\\drivers\\chromedriver.exe");
-        driver = new ChromeDriver();
+//        System.setProperty("webdriver.chrome.driver", "C:\\Users\\vvoitehovici\\IdeaProjects\\testdisportal\\drivers\\chromedriver.exe");
+//        driver = new ChromeDriver();
 
         driver.get("https://www.google.com/");
 //        driver.get("http://demo.guru99.com/test/guru99home/");
