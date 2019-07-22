@@ -44,12 +44,16 @@ public class App
         WebDriver driver = new ChromeDriver();
 
  //       driver.get("https://www.google.com/");
-        driver.get("http://demo.guru99.com/test/guru99home/");
-               String title = driver.getTitle();
+ //       driver.get("http://demo.guru99.com/test/guru99home/");
+        driver.get("https://dis.eagleinvsys.com/");
+
+        String title = driver.getTitle();
 
         System.out.println(title);
 
-             Assert.assertTrue(title.contains("Demo Guru99 Page"));
+        //     Assert.assertTrue(title.contains("Demo Guru99 Page"));
+        Assert.assertTrue(title.contains("DIS Portal"));
+
 
 
     }
