@@ -1,15 +1,5 @@
 
-pipeline {
-    stages {
-        stage('Build') {
-            steps {
-                checkout scm
-            }
-        }
-        stage('Test') {
-            steps {
-                bat 'mvn test'
-            }
-        }
-    }
+node {
+    checkout scm
+    bat 'mvn test'
 }
