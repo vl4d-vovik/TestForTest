@@ -1,12 +1,15 @@
 package TestForTest;
 
-import org.junit.jupiter.api.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import java.net.URL;
 
@@ -19,7 +22,7 @@ public class App
 
     private WebDriver driver;
 
-    @BeforeEach
+    @BeforeClass
     public void beforeTest() throws Exception{
 //        driver = new FirefoxDriver();
 //        driver = new ChromeDriЛver();
@@ -27,13 +30,15 @@ public class App
         driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), new ChromeOptions());
 
     }
-    @AfterEach
+    @AfterClass
     public void afterTest() {
         driver.quit();
     }
 
     @Test
     public void test() {
+
+
         System.out.println("test for test");
 //        System.setProperty("webdriver.chrome.driver", "C:\\Users\\vvoitehovici\\IdeaProjects\\testdisportal\\drivers\\chromedriver.exe");
 //        driver = new ChromeDriver();
@@ -42,7 +47,9 @@ public class App
 //        driver.get("http://demo.guru99.com/test/guru99home/");
         String title = driver.getTitle();
 
-        Assertions.assertTrue(title.contains("Demo Guru99 Page"));
+//        System.out.println(title);
+
+        Assert.assertTrue(title.contains("Demo Guru99 Page"));
 
 
     }
