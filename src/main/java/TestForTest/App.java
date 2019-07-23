@@ -40,7 +40,7 @@ public class App
 
 
         //System.out.println("test for test!!!");
-        //System.setProperty("webdriver.chrome.driver", "lib\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "lib\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
  //       driver.get("https://www.google.com/");
