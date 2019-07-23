@@ -40,7 +40,7 @@ public class App
 
 
         //System.out.println("test for test!!!");
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\vvoitehovici\\IdeaProjects\\testdisportal\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "lib\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
  //       driver.get("https://www.google.com/");
@@ -49,7 +49,7 @@ public class App
 
         String title = driver.getTitle();
 
-        System.out.println(title);
+        System.out.println("Title is " + title);
 
         //     Assert.assertTrue(title.contains("Demo Guru99 Page"));
         Assert.assertTrue(title.contains("DIS Portal"));
